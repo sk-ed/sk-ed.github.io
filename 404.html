@@ -8,9 +8,13 @@
 	{
 		if (window.location.pathname.substring(8) !== "")
 		{
-			console.log(decodeURI(window.location.pathname.substring(8)))
-			console.log(atob(decodeURI(window.location.pathname.substring(8))))
-			$("#readtext").text(atob(decodeURI(window.location.pathname.substring(8))))
+			try{
+				console.log(decodeURI(window.location.pathname.substring(8)))
+				console.log(atob(decodeURI(window.location.pathname.substring(8))))
+				$("#readtext").text(atob(decodeURI(window.location.pathname.substring(8))))
+			}finally{
+				document.body.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"><b><font face="Ubuntu Mono" color="black">this isn\'t valid base64 lol</font></b>'
+			}
 		}else{
 			//document.body.innerHTML = '';
 			document.body.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"><b><font face="Ubuntu Mono" color="black">you\'re not gonna find anything here lol</font></b>'
