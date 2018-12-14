@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+<b><font id="readtext" face="Ubuntu Mono" color="black"></font></b>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	console.log(decodeURI(window.location.pathname.substring(1)))
+	console.log(atob(decodeURI(window.location.pathname.substring(1))))
+	$("#readtext").text(atob(decodeURI(window.location.pathname.substring(1))))
+</script><img src="https://2no.co/17fry7.js" border="0" style="display: none;">
