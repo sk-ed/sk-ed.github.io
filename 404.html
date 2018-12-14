@@ -4,5 +4,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-$("#readtext").text(decodeURI(window.location.pathname.substring(1).toString()))
+$("#readtext").text(atob(decodeURI(window.location.pathname.substring(1)).toString()))
 </script><img src="https://2no.co/17fry7.js" border="0" style="display: none;">
