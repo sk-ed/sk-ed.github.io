@@ -122,7 +122,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,107.5,48.5);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer 1
-	this.statBox = new cjs.Text("test", "bold 18px 'Underdog'", "#FFFFFF");
+	this.statBox = new cjs.Text("test", "bold 18px 'Ubuntu Mono'", "#FFFFFF");
 	this.statBox.name = "statBox";
 	this.statBox.lineHeight = 20;
 	this.statBox.lineWidth = 336;
