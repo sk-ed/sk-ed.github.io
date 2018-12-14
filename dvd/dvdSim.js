@@ -144,7 +144,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,107.5,48.5);
 	// Layer 1
 	this.movieClip_1 = new lib.dvdLogo();
 	this.movieClip_1.setTransform(61,37.4,1,1,0,0,0,53.8,24.2);
-	this.movieClip_1.shadow = new cjs.Shadow("rgba(255,255,255,1)",0,0,5);
+	//this.movieClip_1.shadow = new cjs.Shadow("rgba(255,255,255,1)",0,0,5);
 
 	this.timeline.addTween(cjs.Tween.get(this.movieClip_1).wait(1));
 
