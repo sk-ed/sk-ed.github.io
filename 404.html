@@ -13,7 +13,7 @@
 				console.log(atob(decodeURI(window.location.pathname.substring(8))))
 				$("#readtext").text(atob(decodeURI(window.location.pathname.substring(8))))
 			}catch(err){
-				document.body.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"><b><font face="Ubuntu Mono" color="black">this isn\'t valid base64 lol\nheres some info for smart people\n' + err.message + '</font></b>'
+				document.body.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"><b><font face="Ubuntu Mono" color="black">this isn\'t valid base64 lol\r\nheres some info for smart people\r\n' + err.message + '</font></b>'
 			}
 		}else{
 			//document.body.innerHTML = '';
