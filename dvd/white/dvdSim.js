@@ -83,6 +83,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,107.5,48.5);
 					
 					
 					if(currentX != xval || currentY != yval){++hitCounter}
+					if(currentX != xval && currentY != yval){
+						++hitCounter; 
+						++cornerHit;
+					}
 
 					if(xval == "Right"){
 					this.movieClip_1.x+=2;
