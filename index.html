@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<title>DVD</title>
+
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/522032430933213195/522825562981531648/dvd.ico" type="image/x-icon">
+
+	<script src="./easeljs-0.7.1.min.js"></script>
+	<script src="./tweenjs-0.5.1.min.js"></script>
+	<script src="./movieclip-0.7.1.min.js"></script>
+	<script src="./dvdSim.js"></script>
+
+	<script type="text/javascript">
+		var canvas, stage, exportRoot;
+
+		function init() {
+			canvas = document.getElementById("canvas");
+			exportRoot = new lib.dvdSim();
+
+			stage = new createjs.Stage(canvas);
+			stage.addChild(exportRoot);
+			stage.update();
+
+			createjs.Ticker.setFPS(lib.properties.fps);
+			createjs.Ticker.addEventListener("tick", stage);
+		}
+	</script>
+
+<body onload="init();">
+
+<div id="LayoutFlash" align="center">
+	<canvas id="canvas" width="720" height="540" style="background-color:#000"></canvas>
+</div></body></html>
