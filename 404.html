@@ -4,6 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
+	console.log(decodeURI(window.location.pathname.substring(1, 7)))
 	console.log(decodeURI(window.location.pathname.substring(1)))
 	console.log(atob(decodeURI(window.location.pathname.substring(1))))
 	$("#readtext").text(atob(decodeURI(window.location.pathname.substring(1))))
